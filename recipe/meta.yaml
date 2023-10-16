@@ -22,8 +22,6 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
-    - click
-    - ipython
     - numpy
     - pandas
     - python >=3.8
