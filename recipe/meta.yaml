@@ -1,5 +1,5 @@
 {% set name = "starfile" %}
-{% set version = "0.4.12" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/starfile-{{ version }}.tar.gz
-  sha256: ea2751b6dbb74ba92c89f75fc8c06dae0f708a1d907e07c2394bc4c54ff7727a
+  sha256: 22f6b4d12dcfe88f4d5480c861e646f74226ec7b73612755db7a414551e9fb25
 
 build:
   entry_points:
@@ -22,8 +22,10 @@ requirements:
     - python >=3.8
     - setuptools-scm
   run:
+    - numpy
     - pandas
     - python >=3.8
+    - typing-extensions
 
 test:
   imports:
@@ -36,10 +38,11 @@ test:
     - pip
 
 about:
-  home: https://github.com/alisterburt/starfile
+  home: https://pypi.org/project/starfile
   summary: STAR file reading and writing in python.
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/alisterburt/starfile
 
 extra:
   recipe-maintainers:
