@@ -3,11 +3,13 @@ About starfile-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/starfile-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/alisterburt/starfile
+Home: https://pypi.org/project/starfile
 
 Package license: BSD-3-Clause
 
 Summary: STAR file reading and writing in python.
+
+Development: https://github.com/alisterburt/starfile
 
 Current build status
 ====================
