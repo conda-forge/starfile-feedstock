@@ -1,5 +1,5 @@
 {% set name = "starfile" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/starfile-{{ version }}.tar.gz
-  sha256: f65ad12bad6b64b40bd101bf0aeb4c6ed2342e8f6e10473ac68a3dfe7a236ed4
+  sha256: e472c24554a179e74ab2c0a6c43c21a185f081b9d1c3477b009ef9ba4461fd97
 
 build:
   entry_points:
@@ -21,6 +21,7 @@ requirements:
     - pip
     - python >=3.8
     - setuptools-scm
+    - python-build
   run:
     - numpy
     - pandas
