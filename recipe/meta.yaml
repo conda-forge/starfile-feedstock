@@ -1,5 +1,5 @@
 {% set name = "starfile" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/starfile-{{ version }}.tar.gz
-  sha256: f65ad12bad6b64b40bd101bf0aeb4c6ed2342e8f6e10473ac68a3dfe7a236ed4
+  sha256: 4e7cea4f871f5aeeff6829b2cd95efc0c2212ca7a3a583f5fc8ff53329bc4417
 
 build:
   entry_points:
