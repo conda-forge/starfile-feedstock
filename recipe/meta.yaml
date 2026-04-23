@@ -1,5 +1,5 @@
 {% set name = "starfile" %}
-{% set version = "0.5.2" %}
+{% set version = "0.5.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/starfile-{{ version }}.tar.gz
-  sha256: f65ad12bad6b64b40bd101bf0aeb4c6ed2342e8f6e10473ac68a3dfe7a236ed4
+  sha256: c9562960b06558a35c12e0bd1b8a30b71c4b676733a8b9f222c8ee94a152dc15
 
 build:
   entry_points:
     - starfile = starfile.__main__:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
